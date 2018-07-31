@@ -8,3 +8,5 @@ z = "I like turtles!"
 
 
 # Use the 'format' string method to print the same thing
+
+print(f"x is {x}, y is {y}, z is {z}")
