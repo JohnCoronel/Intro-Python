@@ -1,4 +1,6 @@
+import random
 from room import Room
+from player  import Person
 
 # Declare all the rooms
 
@@ -38,6 +40,11 @@ room['treasure'].s_to = room['narrow']
 #
 
 # Make a new player object that is currently in the 'outside' room.
+name = input('Enter your name: ')
+randomRoom = random.choice(list(room))
+player  = Person(randomRoom,name)
+print("Welcome {}, you start your adventure in the {}. {}".format(player.name, room[randomRoom].name, room[randomRoom].description))
+ 
 
 # Write a loop that:
 #
